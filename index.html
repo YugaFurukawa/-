@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>最終決戦</h1>
+    <input id="start" type="button" value="勝機をこぼすなつかみ取れ" />
+
+    <div id="disp"></div>
+    
+    <input id="btn" type="button" class="my-btn" value="" />
+    <input id="btn2" type="button" class="my-btn" value="" />
+    <input id="btn3" type="button" class="my-btn" value=""  /><br>
+    <input id="btn4" type="button" class="my-btn" value="" />
+    <input id="btn5" type="button" class="my-btn" value="" />
+    <script>
+        
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("disp");
+        var num = [0,0,0,0,0];
+
+        start.addEventListener("click", function(){
+
+         num[0] = Math.floor(Math.random() * 1000);
+         
+         if(num[0]< 10){
+            changeColor4('btn');
+         }else if(num[0]< 100){
+            changeColor3('btn');
+         }else if(num[0]< 500){
+            changeColor2('btn');
+         }else{
+            changeColor('btn');
+         }
+
+         num[1] = Math.floor(Math.random() * 1000);
+
+         if(num[1]< 10){
+            changeColor4('btn2');
+         }else if(num[1]< 100){
+            changeColor3('btn2');
+         }else if(num[1]< 500){
+            changeColor2('btn2');
+         }else{
+            changeColor('btn2');
+         }
+
+         num[2] = Math.floor(Math.random() * 1000);
+
+         if(num[2]< 10){
+            changeColor4('btn3');
+         }else if(num[2]< 100){
+            changeColor3('btn3');
+         }else if(num[2]< 500){
+            changeColor2('btn3');
+         }else{
+            changeColor('btn3');
+         }
+
+         num[3] = Math.floor(Math.random() * 1000);
+
+         if(num[3]< 10){
+            changeColor4('btn4');
+         }else if(num[3]< 100){
+            changeColor3('btn4');
+         }else if(num[3]< 500){
+            changeColor2('btn4');
+         }else{
+            changeColor('btn4');
+         }
+
+         num[4] = Math.floor(Math.random() * 1000);
+
+         if(num[4]< 10){
+            changeColor4('btn5');
+         }else if(num[4]< 100){
+            changeColor3('btn5');
+         }else if(num[4]< 550){
+            changeColor2('btn5');
+         }else{
+            changeColor('btn5');
+         }
+         
+         return num;
+        })
+
+        btn.addEventListener("click", function(){
+            if(num[0] <= 8){
+            disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[0] >= 10 && num[0] <= 50){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[0] >= 100 && num[0] <= 136){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[0] >= 550 && num[0] <= 586){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }
+        })
+        btn2.addEventListener("click", function(){
+            
+            if(num[1] <= 8){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[1] >= 10 && num[1] <= 50){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[1] >= 100 && num[1] <= 136){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[1] >= 550 && num[1] <= 586){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }
+        })
+        btn3.addEventListener("click", function(){
+            
+            if(num[2] <= 8){
+                disp.innerHTML = "V";
+                alert("シンフォギアー！");
+            }else if(num[2] >= 10 && num[2] <= 50){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[2] >= 100 && num[2] <= 136){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[2] >= 550 && num[2] <= 586){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }
+        })
+        btn4.addEventListener("click", function(){
+            
+            if(num[3] <= 8){
+                disp.innerHTML = "V";
+                alert("シンフォギアー！");
+            }else if(num[3] >= 10 && num[3] <= 50){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[3] >= 100 && num[3] <= 136){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[3] >= 550 && num[3] <= 586){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }
+        })
+        btn5.addEventListener("click", function(){
+            
+            if(num[4] <= 8){
+                disp.innerHTML = "V";
+                alert("シンフォギアー！");
+            }else if(num[4] >= 10 && num[4] <= 50){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[4] >= 100 && num[4] <= 136){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }else if(num[4] >= 550 && num[4] <= 586){
+                disp.innerHTML = "V";
+            alert("シンフォギアー！");
+            }
+        })
+
+function changeColor(idname){
+  var obj = document.getElementById(idname);
+  obj.style.color = '#ffffff';          //文字色を白にする
+  obj.style.backgroundColor = 'blue';  //背景色を青にする
+}
+function changeColor2(idname){
+  var obj = document.getElementById(idname);
+  obj.style.color = '#ffffff';          //文字色を白にする
+  obj.style.backgroundColor = 'green';  //背景色を緑にする
+}
+function changeColor3(idname){
+  var obj = document.getElementById(idname);
+  obj.style.color = '#ffffff';          //文字色を白にする
+  obj.style.backgroundColor = 'red';  //背景色を赤にする
+}
+function changeColor4(idname){
+  var obj = document.getElementById(idname);
+  obj.style.color = '#ffffff';          //文字色を白にする
+  obj.style.backgroundColor = 'yellow';  //背景色を黄色にする
+}
+
+    </script>
+    
+</body>
+</html>
